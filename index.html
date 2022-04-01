@@ -32,13 +32,14 @@
            productcart.push(cart);
            console.log(productcart);
 
-           var html="<table><tr><td>Product Id</th><td>Product Name</th><td>Product Price</td></tr></table>"
+           var html="<table><tr><td>Product Id</th><td>Product Name</th><td>Product Price</td></tr>";
+            var html1= "</table>";
            productcart.forEach(element => {
                html+="<tr><td>"+ element.itemid + " " + "</td><td >"+ element.itemname + " " +  "</td><td>" +  element.itemprice + "</td></tr>";
 
                
            });
-           document.getElementById("output").innerHTML=html;
+           document.getElementById("output").innerHTML=html+html1;
         }
         
 
